@@ -12,6 +12,7 @@ class MenuBlockView: UIView {
 
     @IBOutlet weak var contentView: UIView!
     
+    @IBOutlet weak var textLabel: UILabel!
     
         override init(frame: CGRect) {
             super.init(frame: frame)

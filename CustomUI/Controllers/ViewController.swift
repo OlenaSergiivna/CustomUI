@@ -13,10 +13,14 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = #colorLiteral(red: 0.1176470444, green: 0.1176470444, blue: 0.1176470444, alpha: 1)
         
-        let menuBlock = MenuBlockView(frame: CGRect(x: view.frame.minX + 20, y: view.frame.midY + 100, width: 200, height: 200))
-        menuBlock.contentView.layer.cornerRadius = 40
+        let menuBlockOne = MenuBlockView(frame: CGRect(x: view.frame.minX + 20, y: view.frame.midY + 100, width: view.frame.height / 5, height: view.frame.height / 5))
+        menuBlockOne.contentView.layer.cornerRadius = 20
+        
+        let menuBlockTwo = MenuBlockView(frame: CGRect(x: view.frame.maxX - 200, y: view.frame.midY + 100, width: view.frame.height / 5, height: view.frame.height / 5))
+        menuBlockTwo.contentView.layer.cornerRadius = 20
        
-        self.view.addSubview(menuBlock)
+        self.view.addSubview(menuBlockOne)
+        self.view.addSubview(menuBlockTwo)
     }
 
 
