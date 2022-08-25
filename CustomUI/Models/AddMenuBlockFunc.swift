@@ -12,9 +12,9 @@ import UIKit
 
 func addMenuBlock(view: UIView, text: String) {
     
-    let menuBlockOne = MenuBlockView(frame: CGRect(x: view.frame.minX + 15, y: view.frame.midY + 100, width: view.frame.height / 4.9, height: view.frame.height / 4.9))
+    let menuBlockOne = MenuBlockView(frame: CGRect(x: view.frame.minX + 15, y: view.frame.midY + ((view.frame.height / 4.9) / 2), width: view.frame.height / 4.9, height: view.frame.height / 4.9))
     menuBlockOne.contentView.layer.cornerRadius = 20
-    menuBlockOne.imageView.layer.cornerRadius = 0.37 * menuBlockOne.imageView.frame.width
+    menuBlockOne.imageView.layer.cornerRadius = 0.5 * menuBlockOne.imageView.frame.width
     
     view.addSubview(menuBlockOne)
 }

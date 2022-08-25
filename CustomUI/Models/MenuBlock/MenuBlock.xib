@@ -20,8 +20,8 @@
             <rect key="frame" x="0.0" y="0.0" width="253" height="253"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bRd-2t-aks">
-                    <rect key="frame" x="25" y="143.5" width="178" height="47"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRd-2t-aks">
+                    <rect key="frame" x="25" y="120" width="213" height="113"/>
                     <string key="text">Покупка
 Частями</string>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
@@ -29,18 +29,21 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PyZ-Xy-0by">
-                    <rect key="frame" x="25" y="25" width="93.5" height="93.5"/>
+                    <rect key="frame" x="25" y="25" width="70" height="70"/>
                     <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="KTh-9c-MsJ"/>
+                        <constraint firstAttribute="width" constant="70" id="SJf-1G-095"/>
+                    </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" red="0.15294117647058825" green="0.15294117647058825" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="PyZ-Xy-0by" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="4VA-OH-dBh"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bRd-2t-aks" secondAttribute="trailing" constant="50" id="8tt-3x-IZR"/>
-                <constraint firstItem="PyZ-Xy-0by" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.37" id="EuN-xI-Fe5"/>
                 <constraint firstItem="bRd-2t-aks" firstAttribute="top" secondItem="PyZ-Xy-0by" secondAttribute="bottom" constant="25" id="Fyw-c0-yEV"/>
-                <constraint firstItem="PyZ-Xy-0by" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.37" id="oiU-f4-zCD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bRd-2t-aks" secondAttribute="trailing" constant="15" id="lR7-qf-vo8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="bRd-2t-aks" secondAttribute="bottom" constant="20" id="mIR-hz-bZV"/>
                 <constraint firstItem="PyZ-Xy-0by" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="taG-Wr-2jl"/>
                 <constraint firstItem="bRd-2t-aks" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="zKv-br-Zzi"/>
             </constraints>
