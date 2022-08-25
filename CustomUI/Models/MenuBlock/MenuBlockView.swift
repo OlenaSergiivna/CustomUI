@@ -9,5 +9,7 @@ import Foundation
 import UIKit
 
 class MenuBlockView: UIView {
+
+    @IBOutlet weak var textLabel: UILabel!
     
 }

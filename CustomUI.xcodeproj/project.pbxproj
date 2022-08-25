@@ -14,6 +14,7 @@
 		CE4DC64028B6C103004CAB76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4DC63F28B6C103004CAB76 /* Assets.xcassets */; };
 		CE4DC64328B6C103004CAB76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4DC64128B6C103004CAB76 /* LaunchScreen.storyboard */; };
 		CE4DC64F28B6CC21004CAB76 /* MenuBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4DC64E28B6CC21004CAB76 /* MenuBlockView.swift */; };
+		CE4DC65128B6CCEE004CAB76 /* MenuBlock.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4DC65028B6CCEE004CAB76 /* MenuBlock.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		CE4DC64228B6C103004CAB76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE4DC64428B6C104004CAB76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE4DC64E28B6CC21004CAB76 /* MenuBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBlockView.swift; sourceTree = "<group>"; };
+		CE4DC65028B6CCEE004CAB76 /* MenuBlock.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuBlock.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				CE4DC64E28B6CC21004CAB76 /* MenuBlockView.swift */,
+				CE4DC65028B6CCEE004CAB76 /* MenuBlock.xib */,
 			);
 			path = MenuBlock;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			files = (
 				CE4DC64328B6C103004CAB76 /* LaunchScreen.storyboard in Resources */,
 				CE4DC64028B6C103004CAB76 /* Assets.xcassets in Resources */,
+				CE4DC65128B6CCEE004CAB76 /* MenuBlock.xib in Resources */,
 				CE4DC63E28B6C101004CAB76 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
