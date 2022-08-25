@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuBlockView" customModule="CustomUI" customModuleProvider="target">
             <connections>
-                <outlet property="textLabel" destination="bRd-2t-aks" id="Dvl-2Z-2at"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="7WL-Kk-Pca"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
