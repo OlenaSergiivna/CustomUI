@@ -13,7 +13,6 @@ class MenuBlockView: UIView {
     @IBOutlet weak var contentView: UIView!
     
     
-        
         override init(frame: CGRect) {
             super.init(frame: frame)
             commonInit()
@@ -30,8 +29,8 @@ class MenuBlockView: UIView {
         }
     }
 
-    extension UIView
-    {
+    extension UIView {
+        
         func fixInView(_ container: UIView!) -> Void{
             self.translatesAutoresizingMaskIntoConstraints = false;
             self.frame = container.frame;
