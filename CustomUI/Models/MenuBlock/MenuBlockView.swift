@@ -13,11 +13,6 @@ class MenuBlockView: UIView {
     @IBOutlet weak var contentView: UIView!
     
     
-    
-        //let kCONTENT_XIB_NAME = "PersonView"
-    
-        //@IBOutlet var lblFirstName: UILabel!
-       // @IBOutlet var lblLastName: UILabel!
         
         override init(frame: CGRect) {
             super.init(frame: frame)
@@ -30,7 +25,7 @@ class MenuBlockView: UIView {
         }
         
         func commonInit() {
-            Bundle.main.loadNibNamed("CustomView", owner: self, options: nil)
+            Bundle.main.loadNibNamed("MenuBlock", owner: self, options: nil)
             contentView.fixInView(self)
         }
     }
@@ -47,4 +42,3 @@ class MenuBlockView: UIView {
             NSLayoutConstraint(item: self, attribute: .bottom, relatedBy: .equal, toItem: container, attribute: .bottom, multiplier: 1.0, constant: 0).isActive = true
         }
     }
-}
