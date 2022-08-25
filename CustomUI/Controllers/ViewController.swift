@@ -12,7 +12,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let menuBlock = MenuBlockView()
+        let menuBlock = MenuBlockView(frame: CGRect(x: 0, y: 0, width: 250, height: 250))
         self.view.addSubview(menuBlock)
     }
 
