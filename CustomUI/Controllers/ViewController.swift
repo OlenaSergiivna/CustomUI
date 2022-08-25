@@ -13,10 +13,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = #colorLiteral(red: 0.1176470444, green: 0.1176470444, blue: 0.1176470444, alpha: 1)
         
-        let menuBlockOne = MenuBlockView(frame: CGRect(x: view.frame.minX + 15, y: view.frame.midY + 100, width: view.frame.height / 4.9, height: view.frame.height / 4.9))
-        menuBlockOne.contentView.layer.cornerRadius = 20
-        menuBlockOne.textLabel.text = "Покупка\nЧастями"
-        menuBlockOne.imageView.layer.cornerRadius = 0.37 * menuBlockOne.imageView.frame.width
+       addMenuBlock(view: view, text: "Покупка\nЧастями")
         
         let menuBlockTwo = MenuBlockView(frame: CGRect(x: view.frame.maxX - ((view.frame.height / 4.8) + 15) , y: view.frame.midY + 100, width: view.frame.height / 4.9, height: view.frame.height / 4.9))
         menuBlockTwo.contentView.layer.cornerRadius = 20
@@ -27,7 +24,6 @@ class MainViewController: UIViewController {
         
         let menuBlockThree = MenuBlockView(frame: CGRect(x: view.frame.minX + 15, y: view.frame.midY - ((view.frame.height / 4.9) - 15), width: view.frame.maxX - 15, height: view.frame.height / 4.9))
         
-        self.view.addSubview(menuBlockOne)
         self.view.addSubview(menuBlockTwo)
         self.view.addSubview(menuBlockThree)
     }
