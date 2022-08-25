@@ -4,12 +4,14 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuBlockView" customModule="CustomUI" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="7WL-Kk-Pca"/>
+                <outlet property="imageView" destination="PyZ-Xy-0by" id="TDo-ho-U9r"/>
                 <outlet property="textLabel" destination="bRd-2t-aks" id="7uI-kd-soa"/>
             </connections>
         </placeholder>
@@ -18,24 +20,37 @@
             <rect key="frame" x="0.0" y="0.0" width="253" height="253"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bRd-2t-aks">
-                    <rect key="frame" x="25" y="149" width="178" height="54"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bRd-2t-aks">
+                    <rect key="frame" x="25" y="143.5" width="178" height="47"/>
                     <string key="text">Покупка
 Частями</string>
-                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PyZ-Xy-0by">
+                    <rect key="frame" x="25" y="25" width="93.5" height="93.5"/>
+                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" red="0.15294117647058825" green="0.15294117647058825" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
+                <constraint firstItem="PyZ-Xy-0by" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="4VA-OH-dBh"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bRd-2t-aks" secondAttribute="trailing" constant="50" id="8tt-3x-IZR"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="bRd-2t-aks" secondAttribute="bottom" constant="50" id="wJq-ZZ-AzU"/>
+                <constraint firstItem="PyZ-Xy-0by" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.37" id="EuN-xI-Fe5"/>
+                <constraint firstItem="bRd-2t-aks" firstAttribute="top" secondItem="PyZ-Xy-0by" secondAttribute="bottom" constant="25" id="Fyw-c0-yEV"/>
+                <constraint firstItem="PyZ-Xy-0by" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.37" id="oiU-f4-zCD"/>
+                <constraint firstItem="PyZ-Xy-0by" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="taG-Wr-2jl"/>
                 <constraint firstItem="bRd-2t-aks" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="zKv-br-Zzi"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="31.159420289855074" y="342.52232142857139"/>
+            <point key="canvasLocation" x="31.159420289855074" y="341.85267857142856"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

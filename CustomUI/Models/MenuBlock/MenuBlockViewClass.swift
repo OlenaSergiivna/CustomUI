@@ -14,6 +14,9 @@ class MenuBlockView: UIView {
     
     @IBOutlet weak var textLabel: UILabel!
     
+    @IBOutlet weak var imageView: UIView!
+    
+    
         override init(frame: CGRect) {
             super.init(frame: frame)
             commonInit()
