@@ -10,11 +10,11 @@ import UIKit
 
 class MenuBlockView: UIView {
 
-    @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var monoContentView: UIView!
     
-    @IBOutlet weak var textLabel: UILabel!
+    @IBOutlet weak var monoTextLabel: UILabel!
     
-    @IBOutlet weak var imageView: UIView!
+    @IBOutlet weak var monoImageView: UIView!
     
     
         override init(frame: CGRect) {
@@ -29,7 +29,7 @@ class MenuBlockView: UIView {
         
         func commonInit() {
             Bundle.main.loadNibNamed("MenuBlock", owner: self, options: nil)
-            contentView.fixInView(self)
+            monoContentView.fixInView(self)
         }
     }
 

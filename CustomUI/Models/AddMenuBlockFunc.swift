@@ -10,11 +10,11 @@ import UIKit
 
 // + add image
 
-func addMenuBlock(view: UIView, text: String) {
-    
-    let menuBlockOne = MenuBlockView(frame: CGRect(x: view.frame.minX + 15, y: view.frame.midY + ((view.frame.height / 4.9) / 2), width: view.frame.height / 4.9, height: view.frame.height / 4.9))
-    menuBlockOne.contentView.layer.cornerRadius = 20
-    menuBlockOne.imageView.layer.cornerRadius = 0.5 * menuBlockOne.imageView.frame.width
-    
-    view.addSubview(menuBlockOne)
+func addMenuBlock(view: UIView, text: String, x: Double, y: Double, width: Double, height: Double, color: UIColor) {
+    let menuBlock = MenuBlockView(frame: CGRect(x: x, y: y, width: width, height: height))
+ 
+    menuBlock.monoContentView.layer.cornerRadius = 20
+    menuBlock.monoImageView.layer.cornerRadius = 0.5 * menuBlock.monoImageView.frame.width
+    menuBlock.monoImageView.backgroundColor = color
+    view.addSubview(menuBlock)
 }
