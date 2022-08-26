@@ -15,8 +15,20 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j1J-Ip-dlD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="403"/>
+                                <color key="backgroundColor" red="0.079917587339878082" green="0.77926748991012573" blue="0.29461261630058289" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="j1J-Ip-dlD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BDD-Zh-Hpb"/>
+                            <constraint firstItem="j1J-Ip-dlD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Pd4-0f-6VO"/>
+                            <constraint firstItem="j1J-Ip-dlD" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.45" id="wt1-lg-3EA"/>
+                            <constraint firstAttribute="trailing" secondItem="j1J-Ip-dlD" secondAttribute="trailing" id="xKS-dG-Wph"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

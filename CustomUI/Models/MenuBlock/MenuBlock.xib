@@ -20,34 +20,44 @@
             <rect key="frame" x="0.0" y="0.0" width="253" height="253"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRd-2t-aks">
-                    <rect key="frame" x="25" y="120" width="213" height="113"/>
-                    <string key="text">Покупка
-Частями</string>
-                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Покупка Частями" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="bRd-2t-aks">
+                    <rect key="frame" x="20" y="85" width="233" height="24"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
+                    <size key="shadowOffset" width="0.0" height="0.0"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PyZ-Xy-0by">
-                    <rect key="frame" x="25" y="25" width="70" height="70"/>
+                    <rect key="frame" x="20" y="20" width="50" height="50"/>
                     <color key="backgroundColor" systemColor="systemIndigoColor"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="70" id="KTh-9c-MsJ"/>
-                        <constraint firstAttribute="width" constant="70" id="SJf-1G-095"/>
+                        <constraint firstAttribute="height" constant="50" id="Hdo-IS-1zA"/>
+                        <constraint firstAttribute="width" constant="50" id="NT8-83-x81"/>
                     </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" red="0.15294117647058825" green="0.15294117647058825" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
-                <constraint firstItem="PyZ-Xy-0by" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="4VA-OH-dBh"/>
-                <constraint firstItem="bRd-2t-aks" firstAttribute="top" secondItem="PyZ-Xy-0by" secondAttribute="bottom" constant="25" id="Fyw-c0-yEV"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bRd-2t-aks" secondAttribute="trailing" constant="15" id="lR7-qf-vo8"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="bRd-2t-aks" secondAttribute="bottom" constant="20" id="mIR-hz-bZV"/>
-                <constraint firstItem="PyZ-Xy-0by" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="taG-Wr-2jl"/>
-                <constraint firstItem="bRd-2t-aks" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="zKv-br-Zzi"/>
+                <constraint firstItem="PyZ-Xy-0by" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="4VA-OH-dBh"/>
+                <constraint firstItem="bRd-2t-aks" firstAttribute="top" secondItem="PyZ-Xy-0by" secondAttribute="bottom" constant="15" id="Adb-Ic-p7w"/>
+                <constraint firstItem="bRd-2t-aks" firstAttribute="top" secondItem="PyZ-Xy-0by" secondAttribute="bottom" constant="30" id="Fyw-c0-yEV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bRd-2t-aks" secondAttribute="trailing" id="lR7-qf-vo8"/>
+                <constraint firstItem="PyZ-Xy-0by" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="taG-Wr-2jl"/>
+                <constraint firstItem="bRd-2t-aks" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="zKv-br-Zzi"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Adb-Ic-p7w"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="Adb-Ic-p7w"/>
+                    <exclude reference="Fyw-c0-yEV"/>
+                </mask>
+            </variation>
             <point key="canvasLocation" x="31.159420289855074" y="341.85267857142856"/>
         </view>
     </objects>
