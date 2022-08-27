@@ -16,10 +16,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j1J-Ip-dlD">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j1J-Ip-dlD">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="403"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Доступный лимит" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeK-jZ-1FV">
+                                        <rect key="frame" x="50" y="145" width="187" height="26"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="21"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="🇺🇦" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wxe-zZ-UKZ">
+                                        <rect key="frame" x="120" y="186" width="47" height="54"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="0.079917587339878082" green="0.77926748991012573" blue="0.29461261630058289" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="LeK-jZ-1FV" firstAttribute="centerX" secondItem="j1J-Ip-dlD" secondAttribute="centerX" id="LqR-Sw-YJf"/>
+                                    <constraint firstItem="Wxe-zZ-UKZ" firstAttribute="centerX" secondItem="LeK-jZ-1FV" secondAttribute="centerX" id="S1T-9I-ZSC"/>
+                                    <constraint firstItem="LeK-jZ-1FV" firstAttribute="top" secondItem="j1J-Ip-dlD" secondAttribute="top" constant="145" id="SWN-oD-QCi"/>
+                                    <constraint firstItem="Wxe-zZ-UKZ" firstAttribute="top" secondItem="LeK-jZ-1FV" secondAttribute="bottom" constant="15" id="YQe-Wh-ape"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

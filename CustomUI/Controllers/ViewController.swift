@@ -14,8 +14,10 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = #colorLiteral(red: 0.1176470444, green: 0.1176470444, blue: 0.1176470444, alpha: 1)
-        greenView.fixInView
         let blockHeight = (view.frame.width - 45) / 2
+        
+        greenView.fixInView(view, topConstant: view.frame.midY - blockHeight * 2, bottomConstant: -(view.frame.midY + (blockHeight) / 2) + 30)
+        
         
         addMenuBlock(view: view, text: "Покупка\nЧастями", x: 15, y: view.frame.midY + (blockHeight / 2), width: blockHeight, height: blockHeight, color: .systemIndigo)
         addMenuBlock(view: view, text: "Архив", x: view.frame.maxX - (blockHeight + 15.0), y: view.frame.midY + (blockHeight) / 2, width: blockHeight, height: blockHeight, color: .systemGray)
