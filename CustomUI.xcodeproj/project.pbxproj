@@ -16,6 +16,9 @@
 		CE4DC64F28B6CC21004CAB76 /* MenuBlockViewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4DC64E28B6CC21004CAB76 /* MenuBlockViewClass.swift */; };
 		CE4DC65128B6CCEE004CAB76 /* MenuBlock.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4DC65028B6CCEE004CAB76 /* MenuBlock.xib */; };
 		CEC58D6E28B8275B00C6E7F4 /* AddMenuBlockFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC58D6D28B8275B00C6E7F4 /* AddMenuBlockFunc.swift */; };
+		CEE741F528BAA79A0004F13D /* CurrencyBlock.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE741F428BAA79A0004F13D /* CurrencyBlock.xib */; };
+		CEE741F728BAA7B10004F13D /* CurrencyBlockViewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE741F628BAA7B10004F13D /* CurrencyBlockViewClass.swift */; };
+		CEE741F928BAAC2B0004F13D /* AddCurrencyBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE741F828BAAC2B0004F13D /* AddCurrencyBlock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		CE4DC64E28B6CC21004CAB76 /* MenuBlockViewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBlockViewClass.swift; sourceTree = "<group>"; };
 		CE4DC65028B6CCEE004CAB76 /* MenuBlock.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuBlock.xib; sourceTree = "<group>"; };
 		CEC58D6D28B8275B00C6E7F4 /* AddMenuBlockFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMenuBlockFunc.swift; sourceTree = "<group>"; };
+		CEE741F428BAA79A0004F13D /* CurrencyBlock.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyBlock.xib; sourceTree = "<group>"; };
+		CEE741F628BAA7B10004F13D /* CurrencyBlockViewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyBlockViewClass.swift; sourceTree = "<group>"; };
+		CEE741F828BAAC2B0004F13D /* AddCurrencyBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCurrencyBlock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				CEC58D6D28B8275B00C6E7F4 /* AddMenuBlockFunc.swift */,
+				CEE741F828BAAC2B0004F13D /* AddCurrencyBlock.swift */,
+				CEE741F328BAA7760004F13D /* CurrencyBlock */,
 				CE4DC64D28B6CBBB004CAB76 /* MenuBlock */,
 			);
 			path = Models;
@@ -106,6 +114,15 @@
 				CE4DC65028B6CCEE004CAB76 /* MenuBlock.xib */,
 			);
 			path = MenuBlock;
+			sourceTree = "<group>";
+		};
+		CEE741F328BAA7760004F13D /* CurrencyBlock */ = {
+			isa = PBXGroup;
+			children = (
+				CEE741F628BAA7B10004F13D /* CurrencyBlockViewClass.swift */,
+				CEE741F428BAA79A0004F13D /* CurrencyBlock.xib */,
+			);
+			path = CurrencyBlock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +186,7 @@
 				CE4DC64328B6C103004CAB76 /* LaunchScreen.storyboard in Resources */,
 				CE4DC64028B6C103004CAB76 /* Assets.xcassets in Resources */,
 				CE4DC65128B6CCEE004CAB76 /* MenuBlock.xib in Resources */,
+				CEE741F528BAA79A0004F13D /* CurrencyBlock.xib in Resources */,
 				CE4DC63E28B6C101004CAB76 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,7 +198,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE741F928BAAC2B0004F13D /* AddCurrencyBlock.swift in Sources */,
 				CE4DC63B28B6C101004CAB76 /* ViewController.swift in Sources */,
+				CEE741F728BAA7B10004F13D /* CurrencyBlockViewClass.swift in Sources */,
 				CEC58D6E28B8275B00C6E7F4 /* AddMenuBlockFunc.swift in Sources */,
 				CE4DC64F28B6CC21004CAB76 /* MenuBlockViewClass.swift in Sources */,
 				CE4DC63728B6C101004CAB76 /* AppDelegate.swift in Sources */,
