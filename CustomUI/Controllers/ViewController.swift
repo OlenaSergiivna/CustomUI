@@ -9,10 +9,12 @@ import UIKit
 
 class MainViewController: UIViewController {
     
+    @IBOutlet weak var greenView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = #colorLiteral(red: 0.1176470444, green: 0.1176470444, blue: 0.1176470444, alpha: 1)
-        
+        greenView.fixInView
         let blockHeight = (view.frame.width - 45) / 2
         
         addMenuBlock(view: view, text: "Покупка\nЧастями", x: 15, y: view.frame.midY + (blockHeight / 2), width: blockHeight, height: blockHeight, color: .systemIndigo)
