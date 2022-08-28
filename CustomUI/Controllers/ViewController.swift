@@ -11,13 +11,20 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var greenView: UIView!
     
+    @IBOutlet weak var limitLabel: UILabel!
+    
+    @IBOutlet weak var amountLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = #colorLiteral(red: 0.1176470444, green: 0.1176470444, blue: 0.1176470444, alpha: 1)
         let blockHeight = (view.frame.width - 45) / 2
-      //  deviceFontSizeSelector(label: <#T##UILabel#>)
+      
         
-        greenView.fixInView(view, topConstant: view.frame.midY - blockHeight * 2, bottomConstant: -(view.frame.midY + (blockHeight) / 2) + 30)
+        greenView.fixInView(view, topConstant: view.frame.midY - blockHeight * 2 + blockHeight * 0.7, bottomConstant: -(view.frame.midY + (blockHeight) / 2) + 30)
+        limitLabel.fixInView
+        
         
         
         addMenuBlock(view: view, text: "Покупка\nЧастями", x: 15, y: view.frame.midY + (blockHeight / 2), width: blockHeight, height: blockHeight, color: .systemIndigo)
