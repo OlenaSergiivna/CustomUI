@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-func deviceFontSizeSelector(label: UILabel, iPhone_8_SE: CGFloat = 17, iPod_touch: CGFloat = 13, iPhone_12_13_mini: CGFloat = 17, allDevices: CGFloat = 20) {
+func deviceFontSizeSelector(label: UILabel, iPhone_8_SE: CGFloat = 17, iPod_touch: CGFloat = 13, iPhone_12_13_mini: CGFloat = 17, allDevices: CGFloat = 21) {
     let deviceType = UIDevice.current.deviceType
     
     switch deviceType {
@@ -19,6 +19,6 @@ func deviceFontSizeSelector(label: UILabel, iPhone_8_SE: CGFloat = 17, iPod_touc
     case .iPhone_12_13_mini:
         label.font = UIFont.systemFont(ofSize: iPhone_12_13_mini)
     case .unknown:
-        label.font.withSize(allDevices)
+        label.font = UIFont.systemFont(ofSize: allDevices)
     }
 }
