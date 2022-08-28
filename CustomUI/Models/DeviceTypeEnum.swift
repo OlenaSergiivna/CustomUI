@@ -13,6 +13,7 @@ extension UIDevice {
     enum DeviceType: String {
         case iPhone_8_SE = "iPhone 8 or iPhone SE"
         case iPod_touch = "iPod touch"
+        case iPhone_12_13_mini = "iPhone 12,13 mini"
         case unknown = "iPhone or iPad"
     }
     
@@ -20,21 +21,8 @@ extension UIDevice {
         switch UIScreen.main.nativeBounds.height {
         case 1334: return .iPhone_8_SE
         case 1136: return .iPod_touch
+        case 2340: return .iPhone_12_13_mini
         default: return .unknown
         }
-    }
-}
-
-
-func deviceFontSelector(label: UILabel) {
-    let deviceType = UIDevice.current.deviceType
-    
-    switch deviceType {
-    case .iPhone_8_SE:
-        label.font.withSize(15)
-    case .iPod_touch:
-        label.font.withSize(15)
-    case .unknown:
-        label.font.withSize(20)
     }
 }

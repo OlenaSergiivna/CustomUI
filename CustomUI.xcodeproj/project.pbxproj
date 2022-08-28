@@ -15,6 +15,7 @@
 		CE4DC64328B6C103004CAB76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4DC64128B6C103004CAB76 /* LaunchScreen.storyboard */; };
 		CE4DC64F28B6CC21004CAB76 /* MenuBlockViewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4DC64E28B6CC21004CAB76 /* MenuBlockViewClass.swift */; };
 		CE4DC65128B6CCEE004CAB76 /* MenuBlock.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4DC65028B6CCEE004CAB76 /* MenuBlock.xib */; };
+		CEA3EDDB28BC04A4008CBF59 /* FontSizeFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA3EDDA28BC04A4008CBF59 /* FontSizeFunction.swift */; };
 		CEC58D6E28B8275B00C6E7F4 /* AddMenuBlockFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC58D6D28B8275B00C6E7F4 /* AddMenuBlockFunc.swift */; };
 		CEE741F528BAA79A0004F13D /* CurrencyBlock.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE741F428BAA79A0004F13D /* CurrencyBlock.xib */; };
 		CEE741F728BAA7B10004F13D /* CurrencyBlockViewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE741F628BAA7B10004F13D /* CurrencyBlockViewClass.swift */; };
@@ -33,6 +34,7 @@
 		CE4DC64428B6C104004CAB76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE4DC64E28B6CC21004CAB76 /* MenuBlockViewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBlockViewClass.swift; sourceTree = "<group>"; };
 		CE4DC65028B6CCEE004CAB76 /* MenuBlock.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuBlock.xib; sourceTree = "<group>"; };
+		CEA3EDDA28BC04A4008CBF59 /* FontSizeFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizeFunction.swift; sourceTree = "<group>"; };
 		CEC58D6D28B8275B00C6E7F4 /* AddMenuBlockFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMenuBlockFunc.swift; sourceTree = "<group>"; };
 		CEE741F428BAA79A0004F13D /* CurrencyBlock.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyBlock.xib; sourceTree = "<group>"; };
 		CEE741F628BAA7B10004F13D /* CurrencyBlockViewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyBlockViewClass.swift; sourceTree = "<group>"; };
@@ -85,9 +87,8 @@
 		CE4DC64A28B6CB75004CAB76 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CEC58D6D28B8275B00C6E7F4 /* AddMenuBlockFunc.swift */,
-				CEE741F828BAAC2B0004F13D /* AddCurrencyBlock.swift */,
 				CEE741FC28BAD8A30004F13D /* DeviceTypeEnum.swift */,
+				CEA3EDD928BBE700008CBF59 /* Functions */,
 				CE4DC64D28B6CBBB004CAB76 /* MenuBlock */,
 				CEE741F328BAA7760004F13D /* CurrencyBlock */,
 			);
@@ -117,6 +118,16 @@
 				CE4DC65028B6CCEE004CAB76 /* MenuBlock.xib */,
 			);
 			path = MenuBlock;
+			sourceTree = "<group>";
+		};
+		CEA3EDD928BBE700008CBF59 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				CEC58D6D28B8275B00C6E7F4 /* AddMenuBlockFunc.swift */,
+				CEE741F828BAAC2B0004F13D /* AddCurrencyBlock.swift */,
+				CEA3EDDA28BC04A4008CBF59 /* FontSizeFunction.swift */,
+			);
+			path = Functions;
 			sourceTree = "<group>";
 		};
 		CEE741F328BAA7760004F13D /* CurrencyBlock */ = {
@@ -208,6 +219,7 @@
 				CE4DC64F28B6CC21004CAB76 /* MenuBlockViewClass.swift in Sources */,
 				CE4DC63728B6C101004CAB76 /* AppDelegate.swift in Sources */,
 				CEE741FD28BAD8A30004F13D /* DeviceTypeEnum.swift in Sources */,
+				CEA3EDDB28BC04A4008CBF59 /* FontSizeFunction.swift in Sources */,
 				CE4DC63928B6C101004CAB76 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +373,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -389,6 +402,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

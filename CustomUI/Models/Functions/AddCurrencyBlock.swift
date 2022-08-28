@@ -13,9 +13,9 @@ func addCurrencyBlock(view: UIView, x: Double, y: Double, width: Double, height:
 //    menuBlock.monoContentView.layer.cornerRadius = 20
 //    menuBlock.monoImageView.layer.cornerRadius = 0.5 * menuBlock.monoImageView.frame.width
 //    menuBlock.monoImageView.backgroundColor = color
-    currencyBlock.firstView.layer.cornerRadius = 20
+    currencyBlock.firstView.layer.cornerRadius = 15
     currencyBlock.firstView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
-    currencyBlock.secondView.layer.cornerRadius = 20
+    currencyBlock.secondView.layer.cornerRadius = 15
     currencyBlock.secondView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMaxXMaxYCorner]
     view.addSubview(currencyBlock)
 }

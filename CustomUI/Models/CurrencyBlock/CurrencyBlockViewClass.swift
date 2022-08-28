@@ -26,6 +26,6 @@ class CurrencyBlockView: UIView {
     
     func commonInit() {
         Bundle.main.loadNibNamed("CurrencyBlock", owner: self, options: nil)
-        currencyContentView.fixInView(self)
+        currencyContentView.fixInView(self, topConstant: -10)
     }
 }

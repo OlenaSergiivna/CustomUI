@@ -16,5 +16,6 @@ func addMenuBlock(view: UIView, text: String, x: Double, y: Double, width: Doubl
     menuBlock.monoContentView.layer.cornerRadius = 20
     menuBlock.monoImageView.layer.cornerRadius = 0.5 * menuBlock.monoImageView.frame.width
     menuBlock.monoImageView.backgroundColor = color
+    deviceFontSizeSelector(label: menuBlock.monoTextLabel)
     view.addSubview(menuBlock)
 }
