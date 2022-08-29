@@ -42,7 +42,6 @@ class MainViewController: UIViewController, MenuBlockDelegate {
         
         addCurrencyBlock(view: view, x: 0, y: view.frame.midY - blockHeight * 2, width: view.frame.maxX, height: blockHeight * 0.7)
         
-        
     }
      
 }

@@ -21,7 +21,8 @@ class MenuBlockView: UIView {
     
     @IBOutlet weak var monoContentView: UIView!
     
-    @IBOutlet weak var monoTextLabel: UILabel!
+    @IBOutlet weak var monoTextLabel: UIButton!
+    
     
     @IBOutlet weak var monoImageView: UIButton!
     
@@ -50,4 +51,7 @@ class MenuBlockView: UIView {
         delegate?.menuElementPressed()
     }
     
+    @IBAction func labelPressed(_ sender: Any) {
+        delegate?.menuElementPressed()
+    }
 }
