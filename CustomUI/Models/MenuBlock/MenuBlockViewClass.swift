@@ -11,7 +11,7 @@ import UIKit
 
 protocol MenuBlockDelegate: NSObject {
     
-    func menuElementPressed()
+    func menuElementPressed(item: UIButton)
 }
 
 
@@ -47,11 +47,11 @@ class MenuBlockView: UIView {
 //    }
 //
     
-    @IBAction func imagePressed(_ sender: Any) {
-        delegate?.menuElementPressed()
+    @IBAction func imagePressed(_ sender: UIButton) {
+        delegate?.menuElementPressed(item: sender)
     }
     
-    @IBAction func labelPressed(_ sender: Any) {
-        delegate?.menuElementPressed()
+    @IBAction func labelPressed(_ sender: UIButton) {
+        delegate?.menuElementPressed(item: sender)
     }
 }

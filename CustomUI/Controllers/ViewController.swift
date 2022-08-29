@@ -9,8 +9,13 @@ import UIKit
 
 class MainViewController: UIViewController, MenuBlockDelegate {
     
-    func menuElementPressed() {
-        print("Menu Item Pressed!")
+    func menuElementPressed(item: UIButton) {
+        if item.tag == 1 {
+            print("Image Pressed!")
+        } else {
+            print("Label Pressed!")
+        }
+       
     }
     
     
@@ -38,8 +43,7 @@ class MainViewController: UIViewController, MenuBlockDelegate {
         firstMenuBlock.delegate = self
         secondMenuBlock.delegate = self
         thirdMenuBlock.delegate = self
-        
-        
+            
         addCurrencyBlock(view: view, x: 0, y: view.frame.midY - blockHeight * 2, width: view.frame.maxX, height: blockHeight * 0.7)
         
     }
