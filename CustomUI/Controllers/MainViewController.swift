@@ -43,8 +43,8 @@ class MainViewController: UIViewController, MenuBlockDelegate {
         let blockHeight = (view.frame.width - 45) / 2
         
         greenView.fixInView(view, topConstant: view.frame.midY - blockHeight * 2 + blockHeight * 0.7, bottomConstant: -(view.frame.midY + (blockHeight) / 2) + 30)
-        limitLabel.fixInView(greenView, topConstant: 10, isActiveBottom: false, leadingConstant: 0, trailingConstant: 0)
-        amountLabel.fixInView(greenView, topConstant: 50, isActiveBottom: false, leadingConstant: 0, trailingConstant: 0)
+        limitLabel.fixInView(greenView, topConstant: blockHeight / 15, isActiveBottom: false, leadingConstant: 80, trailingConstant: -80)
+        amountLabel.fixInView(greenView, topConstant: blockHeight / 4, isActiveBottom: false, leadingConstant: 140, trailingConstant: -140)
         
         
         // MARK: Adding and configuring three MenuBlocks programmatically
