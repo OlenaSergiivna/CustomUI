@@ -16,7 +16,7 @@
 		CE4DC64F28B6CC21004CAB76 /* MenuBlockViewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4DC64E28B6CC21004CAB76 /* MenuBlockViewClass.swift */; };
 		CE4DC65128B6CCEE004CAB76 /* MenuBlock.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4DC65028B6CCEE004CAB76 /* MenuBlock.xib */; };
 		CEA3EDDB28BC04A4008CBF59 /* FontSizeFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA3EDDA28BC04A4008CBF59 /* FontSizeFunction.swift */; };
-		CEA3EDDE28BC0F35008CBF59 /* FixIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA3EDDD28BC0F35008CBF59 /* FixIn.swift */; };
+		CEA3EDDE28BC0F35008CBF59 /* FixInViewFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA3EDDD28BC0F35008CBF59 /* FixInViewFunc.swift */; };
 		CEC58D6E28B8275B00C6E7F4 /* AddMenuBlockFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC58D6D28B8275B00C6E7F4 /* AddMenuBlockFunc.swift */; };
 		CEE741F528BAA79A0004F13D /* CurrencyBlock.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE741F428BAA79A0004F13D /* CurrencyBlock.xib */; };
 		CEE741F728BAA7B10004F13D /* CurrencyBlockViewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE741F628BAA7B10004F13D /* CurrencyBlockViewClass.swift */; };
@@ -36,7 +36,7 @@
 		CE4DC64E28B6CC21004CAB76 /* MenuBlockViewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBlockViewClass.swift; sourceTree = "<group>"; };
 		CE4DC65028B6CCEE004CAB76 /* MenuBlock.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuBlock.xib; sourceTree = "<group>"; };
 		CEA3EDDA28BC04A4008CBF59 /* FontSizeFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizeFunction.swift; sourceTree = "<group>"; };
-		CEA3EDDD28BC0F35008CBF59 /* FixIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixIn.swift; sourceTree = "<group>"; };
+		CEA3EDDD28BC0F35008CBF59 /* FixInViewFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixInViewFunc.swift; sourceTree = "<group>"; };
 		CEC58D6D28B8275B00C6E7F4 /* AddMenuBlockFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMenuBlockFunc.swift; sourceTree = "<group>"; };
 		CEE741F428BAA79A0004F13D /* CurrencyBlock.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyBlock.xib; sourceTree = "<group>"; };
 		CEE741F628BAA7B10004F13D /* CurrencyBlockViewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyBlockViewClass.swift; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		CE4DC64A28B6CB75004CAB76 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CEA3EDDC28BC0F20008CBF59 /* Extencions */,
+				CEA3EDDC28BC0F20008CBF59 /* Extensions */,
 				CEE741FC28BAD8A30004F13D /* DeviceTypeEnum.swift */,
 				CEA3EDD928BBE700008CBF59 /* Functions */,
 				CE4DC64D28B6CBBB004CAB76 /* MenuBlock */,
@@ -133,12 +133,12 @@
 			path = Functions;
 			sourceTree = "<group>";
 		};
-		CEA3EDDC28BC0F20008CBF59 /* Extencions */ = {
+		CEA3EDDC28BC0F20008CBF59 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				CEA3EDDD28BC0F35008CBF59 /* FixIn.swift */,
+				CEA3EDDD28BC0F35008CBF59 /* FixInViewFunc.swift */,
 			);
-			path = Extencions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		CEE741F328BAA7760004F13D /* CurrencyBlock */ = {
@@ -231,7 +231,7 @@
 				CE4DC63728B6C101004CAB76 /* AppDelegate.swift in Sources */,
 				CEE741FD28BAD8A30004F13D /* DeviceTypeEnum.swift in Sources */,
 				CEA3EDDB28BC04A4008CBF59 /* FontSizeFunction.swift in Sources */,
-				CEA3EDDE28BC0F35008CBF59 /* FixIn.swift in Sources */,
+				CEA3EDDE28BC0F35008CBF59 /* FixInViewFunc.swift in Sources */,
 				CE4DC63928B6C101004CAB76 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

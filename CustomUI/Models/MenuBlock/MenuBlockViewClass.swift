@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class MenuBlockView: UIView {
+ class MenuBlockView: UIView {
 
     @IBOutlet weak var monoContentView: UIView!
     
@@ -31,4 +31,8 @@ class MenuBlockView: UIView {
             Bundle.main.loadNibNamed("MenuBlock", owner: self, options: nil)
             monoContentView.fixInView(self)
         }
+    
+    func configure(with text: String, image: UIImage) {
+        
     }
+ }

@@ -20,11 +20,10 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = #colorLiteral(red: 0.1176470444, green: 0.1176470444, blue: 0.1176470444, alpha: 1)
         let blockHeight = (view.frame.width - 45) / 2
-      
-        
+     
         greenView.fixInView(view, topConstant: view.frame.midY - blockHeight * 2 + blockHeight * 0.7, bottomConstant: -(view.frame.midY + (blockHeight) / 2) + 30)
-        limitLabel.fixInView
-        
+        limitLabel.fixInView(greenView, topConstant: 10, isActiveBottom: false, leadingConstant: 0, trailingConstant: 0)
+        amountLabel.fixInView(greenView, topConstant: 50, isActiveBottom: false, leadingConstant: 0, trailingConstant: 0)
         
         
         addMenuBlock(view: view, text: "Покупка\nЧастями", x: 15, y: view.frame.midY + (blockHeight / 2), width: blockHeight, height: blockHeight, color: .systemIndigo)
@@ -37,5 +36,4 @@ class MainViewController: UIViewController {
     }
      
 }
-
 
