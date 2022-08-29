@@ -7,7 +7,12 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, MenuBlockDelegate {
+    
+    func menuElementPressed() {
+        print("Menu Item Pressed!")
+    }
+    
     
     @IBOutlet weak var greenView: UIView!
     
@@ -24,11 +29,16 @@ class MainViewController: UIViewController {
         greenView.fixInView(view, topConstant: view.frame.midY - blockHeight * 2 + blockHeight * 0.7, bottomConstant: -(view.frame.midY + (blockHeight) / 2) + 30)
         limitLabel.fixInView(greenView, topConstant: 10, isActiveBottom: false, leadingConstant: 0, trailingConstant: 0)
         amountLabel.fixInView(greenView, topConstant: 50, isActiveBottom: false, leadingConstant: 0, trailingConstant: 0)
+
         
+        let firstMenuBlock = addMenuBlock(view: view, text: "Покупка\nЧастями", x: 15, y: view.frame.midY + (blockHeight / 2), width: blockHeight, height: blockHeight, color: .systemIndigo)
+        let secondMenuBlock = addMenuBlock(view: view, text: "Архив", x: view.frame.maxX - (blockHeight + 15.0), y: view.frame.midY + (blockHeight) / 2, width: blockHeight, height: blockHeight, color: .systemGray)
+        let thirdMenuBlock = addMenuBlock(view: view, text: "Рассрочка на карту", x: view.frame.minX + 15.0, y: view.frame.midY - (blockHeight / 2) - 15, width: view.frame.maxX - 30.0, height: blockHeight, color: .systemGreen)
         
-        addMenuBlock(view: view, text: "Покупка\nЧастями", x: 15, y: view.frame.midY + (blockHeight / 2), width: blockHeight, height: blockHeight, color: .systemIndigo)
-        addMenuBlock(view: view, text: "Архив", x: view.frame.maxX - (blockHeight + 15.0), y: view.frame.midY + (blockHeight) / 2, width: blockHeight, height: blockHeight, color: .systemGray)
-        addMenuBlock(view: view, text: "Рассрочка на карту", x: view.frame.minX + 15.0, y: view.frame.midY - (blockHeight / 2) - 15, width: view.frame.maxX - 30.0, height: blockHeight, color: .systemGreen)
+        firstMenuBlock.delegate = self
+        secondMenuBlock.delegate = self
+        thirdMenuBlock.delegate = self
+        
         
         addCurrencyBlock(view: view, x: 0, y: view.frame.midY - blockHeight * 2, width: view.frame.maxX, height: blockHeight * 0.7)
         

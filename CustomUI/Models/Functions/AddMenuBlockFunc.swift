@@ -10,7 +10,7 @@ import UIKit
 
 // + add image
 
-func addMenuBlock(view: UIView, text: String, x: Double, y: Double, width: Double, height: Double, color: UIColor) {
+func addMenuBlock(view: UIView, text: String, x: Double, y: Double, width: Double, height: Double, color: UIColor) -> MenuBlockView {
     let menuBlock = MenuBlockView(frame: CGRect(x: x, y: y, width: width, height: height))
     menuBlock.monoTextLabel.text = text
     menuBlock.monoContentView.layer.cornerRadius = 20
@@ -18,4 +18,6 @@ func addMenuBlock(view: UIView, text: String, x: Double, y: Double, width: Doubl
     menuBlock.monoImageView.backgroundColor = color
     deviceFontSizeSelector(label: menuBlock.monoTextLabel)
     view.addSubview(menuBlock)
+    
+    return menuBlock
 }
