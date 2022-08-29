@@ -19,12 +19,11 @@ class MenuBlockView: UIView {
     
     weak var delegate: MenuBlockDelegate?
     
-    @IBOutlet weak var monoContentView: UIView!
+    @IBOutlet weak private var monoContentView: UIView!
     
-    @IBOutlet weak var monoTextLabel: UIButton!
+    @IBOutlet weak private var monoTextLabel: UIButton!
     
-    
-    @IBOutlet weak var monoImageView: UIButton!
+    @IBOutlet weak private var monoImageView: UIButton!
     
     
     override init(frame: CGRect) {
@@ -42,10 +41,16 @@ class MenuBlockView: UIView {
         monoContentView.fixInView(self)
     }
     
-//    func configure(with text: String, image: UIImage) {
-//
-//    }
-//
+    func addAndConfigureMenuBlock(view: UIView, text: String, x: Double, y: Double, width: Double, height: Double, color: UIColor) {
+        self.frame = CGRect(x: x, y: y, width: width, height: height)
+        self.monoTextLabel.setTitle(text, for: .normal)
+        self.monoContentView.layer.cornerRadius = 20
+        self.monoImageView.layer.cornerRadius = 0.5 * self.monoImageView.frame.width
+        self.monoImageView.backgroundColor = color
+        deviceFontSizeSelector(label: self.monoTextLabel)
+        view.addSubview(self)
+        
+    }
     
     @IBAction func imagePressed(_ sender: UIButton) {
         delegate?.menuElementPressed(item: sender)
