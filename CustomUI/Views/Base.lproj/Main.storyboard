@@ -34,6 +34,18 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yd0-7r-An6">
+                                        <rect key="frame" x="361" y="87" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="information"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YrA-ow-2Lf">
+                                        <rect key="frame" x="21" y="87" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="coins"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.079917587339878082" green="0.77926748991012573" blue="0.29461261630058289" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -44,7 +56,9 @@
                     <connections>
                         <outlet property="amountLabel" destination="Wxe-zZ-UKZ" id="5fG-Mm-nfl"/>
                         <outlet property="greenView" destination="j1J-Ip-dlD" id="qME-8l-brL"/>
+                        <outlet property="leftButton" destination="YrA-ow-2Lf" id="jn4-xw-4Qw"/>
                         <outlet property="limitLabel" destination="LeK-jZ-1FV" id="RbS-yQ-tQb"/>
+                        <outlet property="rightButton" destination="Yd0-7r-An6" id="8JV-zX-Rtm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -53,6 +67,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="coins" width="512" height="512"/>
+        <image name="information" width="512" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
