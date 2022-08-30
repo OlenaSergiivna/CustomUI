@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+// MARK: Function, that changes font depending on device type
+
 func deviceFontSizeSelector(label: UIButton, iPhone_8_SE: CGFloat = 17, iPod_touch: CGFloat = 13, iPhone_12_13_mini: CGFloat = 17, allDevices: CGFloat = 21) {
     let deviceType = UIDevice.current.deviceType
     
