@@ -19,7 +19,7 @@
             <rect key="frame" x="0.0" y="0.0" width="253" height="253"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jeJ-79-cZF">
+                <button opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jeJ-79-cZF">
                     <rect key="frame" x="20" y="20" width="50" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="UlQ-xQ-oav"/>

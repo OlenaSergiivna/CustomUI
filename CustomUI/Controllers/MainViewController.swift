@@ -64,15 +64,15 @@ class MainViewController: UIViewController, MenuBlockDelegate {
         // MARK: Adding and configuring three MenuBlocks programmatically
         
         let firstMenuBlock = MenuBlockView()
-        firstMenuBlock.addAndConfigureMenuBlock(view: view, text: "Покупка\nЧастями", x: 15, y: view.frame.midY + (blockHeight / 2), width: blockHeight, height: blockHeight, color: .systemIndigo, image: "paw")
+        firstMenuBlock.addAndConfigureMenuBlock(view: view, text: "Покупка\nЧастями", x: 15, y: view.frame.midY + (blockHeight / 2), width: blockHeight, height: blockHeight, gradient: [ #colorLiteral(red: 0.4913454652, green: 0.3840733469, blue: 0.7313657999, alpha: 1).cgColor, #colorLiteral(red: 0.4519740343, green: 0.3445723057, blue: 0.6876134276, alpha: 1).cgColor], image: "paw")
         
         
         let secondMenuBlock = MenuBlockView()
-        secondMenuBlock.addAndConfigureMenuBlock(view: view, text: "Архив", x: view.frame.maxX - (blockHeight + 15.0), y: view.frame.midY + (blockHeight) / 2, width: blockHeight, height: blockHeight, color: .systemGray, image: "check")
+        secondMenuBlock.addAndConfigureMenuBlock(view: view, text: "Архив", x: view.frame.maxX - (blockHeight + 15.0), y: view.frame.midY + (blockHeight) / 2, width: blockHeight, height: blockHeight, gradient: [#colorLiteral(red: 0.4894579053, green: 0.6020491719, blue: 0.652957201, alpha: 1).cgColor, #colorLiteral(red: 0.4348018765, green: 0.5267388225, blue: 0.5866801143, alpha: 1) .cgColor], image: "check")
         
         
         let thirdMenuBlock = MenuBlockView()
-        thirdMenuBlock.addAndConfigureMenuBlock(view: view, text: "Рассрочка на карту", x: view.frame.minX + 15.0, y: view.frame.midY - (blockHeight / 2) - 15, width: view.frame.maxX - 30.0, height: blockHeight, color: .systemGreen, image: "diagram")
+        thirdMenuBlock.addAndConfigureMenuBlock(view: view, text: "Рассрочка на карту", x: view.frame.minX + 15.0, y: view.frame.midY - (blockHeight / 2) - 15, width: view.frame.maxX - 30.0, height: blockHeight, gradient: [#colorLiteral(red: 0.1306113005, green: 0.741311729, blue: 0.4202265143, alpha: 1).cgColor, #colorLiteral(red: 0.1069343612, green: 0.5951247811, blue: 0.4803116918, alpha: 1).cgColor], image: "diagram")
         
         
         // MARK: Setting MainViewController as delegate for three MenuBlocks
@@ -85,6 +85,8 @@ class MainViewController: UIViewController, MenuBlockDelegate {
         // MARK: Adding and configuring CurrencyBlock programmatically
         
         addCurrencyBlock(view: view, x: 0, y: view.frame.midY - blockHeight * 2, width: view.frame.maxX, height: blockHeight * 0.8)
+        
+       // applyGradient(view: greenView, color: [ #colorLiteral(red: 0.08013602346, green: 0.6134784818, blue: 0.3332336247, alpha: 1).cgColor, #colorLiteral(red: 0.05025497079, green: 0.4551060796, blue: 0.3943584263, alpha: 1).cgColor], at: 0)
         
     }
     
