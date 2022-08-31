@@ -11,7 +11,7 @@ import UIKit
 func applyGradient(view: UIView, color: [Any], at layer: UInt32) {
     
     let gradientLayer = CAGradientLayer()
-    gradientLayer.frame = view.bounds
+    gradientLayer.frame = view.bounds.integral
     gradientLayer.type = .axial
     gradientLayer.colors = color
     gradientLayer.shouldRasterize = true
