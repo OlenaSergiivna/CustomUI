@@ -41,6 +41,8 @@ class MenuBlockView: UIView {
         monoContentView.fixInView(self)
     }
     
+    
+    
     func addAndConfigureMenuBlock(view: UIView, text: String, x: Double, y: Double, width: Double, height: Double, gradient: [Any], at: UInt32, image: String) {
         self.frame = CGRect(x: x, y: y, width: width, height: height)
         self.monoTextLabel.setTitle(text, for: .normal)
@@ -54,10 +56,11 @@ class MenuBlockView: UIView {
         }
         
         deviceFontSizeSelector(label: self.monoTextLabel)
-  
+        
         view.addSubview(self)
         
     }
+    
     
     @IBAction func imagePressed(_ sender: UIButton) {
         delegate?.menuElementPressed(item: sender)
