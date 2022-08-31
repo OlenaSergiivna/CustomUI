@@ -9,9 +9,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuBlockView" customModule="CustomUI" customModuleProvider="target">
             <connections>
+                <outlet property="menuBlockImageButton" destination="jeJ-79-cZF" id="oI5-rm-SMJ"/>
+                <outlet property="menuBlockTextButton" destination="Vms-wF-8LQ" id="8Mc-Bl-Jo8"/>
                 <outlet property="monoContentView" destination="iN0-l3-epB" id="7WL-Kk-Pca"/>
-                <outlet property="monoImageView" destination="jeJ-79-cZF" id="oI5-rm-SMJ"/>
-                <outlet property="monoTextLabel" destination="Vms-wF-8LQ" id="8Mc-Bl-Jo8"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

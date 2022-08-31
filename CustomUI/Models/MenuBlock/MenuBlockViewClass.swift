@@ -21,9 +21,9 @@ class MenuBlockView: UIView {
     
     @IBOutlet weak private var monoContentView: UIView!
     
-    @IBOutlet weak private var monoTextLabel: UIButton!
+    @IBOutlet weak private var menuBlockTextButton: UIButton!
     
-    @IBOutlet weak private var monoImageView: UIButton!
+    @IBOutlet weak private var menuBlockImageButton: UIButton!
     
     
     override init(frame: CGRect) {
@@ -45,17 +45,17 @@ class MenuBlockView: UIView {
     
     func addAndConfigureMenuBlock(view: UIView, text: String, x: Double, y: Double, width: Double, height: Double, gradient: [Any], at: UInt32, image: String) {
         self.frame = CGRect(x: x, y: y, width: width, height: height)
-        self.monoTextLabel.setTitle(text, for: .normal)
+        self.menuBlockTextButton.setTitle(text, for: .normal)
         self.monoContentView.layer.cornerRadius = 20
-        applyGradient(view: self.monoImageView, color: gradient, at: at)
-        self.monoImageView.layer.cornerRadius = 0.5 * self.monoImageView.frame.width
-        self.monoImageView.setImage(UIImage(named: image), for: .normal)
+        applyGradient(view: self.menuBlockImageButton, color: gradient, at: at)
+        self.menuBlockImageButton.layer.cornerRadius = 0.5 * self.menuBlockImageButton.frame.width
+        self.menuBlockImageButton.setImage(UIImage(named: image), for: .normal)
         
-        if let imageView = self.monoImageView.imageView {
-            monoImageView.bringSubviewToFront(imageView)
+        if let imageView = self.menuBlockImageButton.imageView {
+            menuBlockImageButton.bringSubviewToFront(imageView)
         }
         
-        deviceFontSizeSelector(label: self.monoTextLabel)
+        deviceFontSizeSelector(label: self.menuBlockTextButton)
         
         view.addSubview(self)
         
