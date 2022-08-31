@@ -41,13 +41,18 @@ class MenuBlockView: UIView {
         monoContentView.fixInView(self)
     }
     
-    func addAndConfigureMenuBlock(view: UIView, text: String, x: Double, y: Double, width: Double, height: Double, gradient: [Any], image: String) {
+    func addAndConfigureMenuBlock(view: UIView, text: String, x: Double, y: Double, width: Double, height: Double, gradient: [Any], at: UInt32, image: String) {
         self.frame = CGRect(x: x, y: y, width: width, height: height)
         self.monoTextLabel.setTitle(text, for: .normal)
         self.monoContentView.layer.cornerRadius = 20
-        applyGradient(view: self.monoImageView, color: gradient)
+        applyGradient(view: self.monoImageView, color: gradient, at: at)
         self.monoImageView.layer.cornerRadius = 0.5 * self.monoImageView.frame.width
         self.monoImageView.setImage(UIImage(named: image), for: .normal)
+        
+        if let imageView = self.monoImageView.imageView {
+            monoImageView.bringSubviewToFront(imageView)
+        }
+        
         deviceFontSizeSelector(label: self.monoTextLabel)
   
         view.addSubview(self)
